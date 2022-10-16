@@ -1,0 +1,23 @@
+// ===== Colors =====
+$Color_Main: #9c71fc;
+$Color_Lavander: #a285d3;
+$Color_White: #fff;
+// ===== Colors =====
+
+// ===== Common =====
+$BorderRadius: 8px;
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin FlexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin FlexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+// ===== Common =====

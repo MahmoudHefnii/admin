@@ -1,0 +1,16 @@
+@import "../Variables/Variables.scss";
+.Input {
+  width: 98%;
+  height: 38px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 0px 5px;
+  font-size: 14px;
+  outline: 0px;
+  &:hover {
+    border: 1px solid $Color_Main;
+  }
+  &:focus {
+    border: 1px solid $Color_Main;
+  }
+}

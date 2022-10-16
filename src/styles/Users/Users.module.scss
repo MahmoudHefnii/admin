@@ -1,0 +1,12 @@
+@import "../Variables/Variables.scss";
+
+.UsersContainer {
+  display: flex;
+  width: 330px;
+  margin: 0px auto;
+  height: 90px;
+  align-items: center;
+}
+.Selected {
+  color: $Color_Main;
+}

@@ -1,0 +1,14 @@
+@import "../Variables/Variables.scss";
+.containerUserBuildingsMap {
+  @include FlexBetween;
+  gap: 10px;
+  .BuildingListWrapper {
+    flex: 0 0 29%;
+    max-width: 29%;
+  }
+  .FormMapWrapper {
+    flex: 0 0 69%;
+    max-width: 69%;
+    position: relative;
+  }
+}

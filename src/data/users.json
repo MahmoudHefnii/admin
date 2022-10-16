@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "name": "user 1",
+    "isSelected": true,
+    "buildings": [
+      {
+        "id": 1,
+        "buildingName": "Cairo Build",
+        "isSelected": true,
+        "locationId": "EGY",
+        "location": "Egypt",
+        "position": [28.212732317073176, 31.432993658536578]
+      },
+      {
+        "id": 2,
+        "buildingName": "Libya Build",
+        "isSelected": false,
+        "locationId": "LBY",
+        "location": "Libya",
+        "position": [28.594594781818184, 16.48617512727273]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "user 2",
+    "isSelected": false,
+    "buildings": [
+      {
+        "id": 1,
+        "buildingName": "Arminia Build",
+        "isSelected": true,
+        "locationId": "ARM",
+        "location": "Armenia",
+        "position": [40.0073217368421, 45.24748026315788]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "user 3",
+    "isSelected": false,
+    "buildings": [
+      {
+        "id": 1,
+        "buildingName": "Cairo Build",
+        "isSelected": true,
+        "locationId": "EGY",
+        "location": "Egypt",
+        "position": [28.212732317073176, 31.432993658536578]
+      }
+    ]
+  }
+]
