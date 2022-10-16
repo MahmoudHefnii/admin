@@ -1,5 +1,4 @@
-import { Hover_Color } from "constants";
-import { Color_Main } from "constants";
+import { Color_Main, Hover_Color } from "constants";
 
 const dot = (color = "transparent") => ({
   alignItems: "center",
@@ -11,14 +10,11 @@ export const colourStyles = {
     ...styles,
     backgroundColor: "white",
     boxShadow: "0px",
-    // borderColor: `#cccccc`,
     ":active": {
       boxShadow: `0 0 0 1px ${Color_Main}`,
-      // borderColor: `${Color_Main}`,
     },
     ":hover": {
       boxShadow: `0 0 0 1px ${Color_Main}`,
-      // borderColor: `${Color_Main}`,
     },
   }),
   menu: (styles) => ({
