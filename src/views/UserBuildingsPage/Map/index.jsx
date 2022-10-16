@@ -82,7 +82,7 @@ export default function MapLocation() {
         target: document.getElementById("map"),
         view: new View({
           center: fromLonLat(selectedBuild?.selectedBuild?.position.reverse()),
-          zoom: 2,
+          zoom: 3,
           multiWorld: false,
         }),
       });
