@@ -1,8 +1,8 @@
-import styles from "styles/Users/Users.module.scss";
-import { useDispatch, useSelector } from "react-redux";
-import { getSelectedUser } from "store/actions/getSelectedUser";
-import { updateAllData } from "store/actions/getAllData";
 import SingleSelect from "components/Select";
+import { useDispatch, useSelector } from "react-redux";
+import { updateAllData } from "store/actions/getAllData";
+import { getSelectedUser } from "store/actions/getSelectedUser";
+import styles from "styles/Users/Users.module.scss";
 import {
   findElementFunction,
   markIsSelectedFunction,

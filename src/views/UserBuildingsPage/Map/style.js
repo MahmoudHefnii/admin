@@ -1,5 +1,4 @@
-import { Color_Main } from "constants";
-import { MAP_COLOR } from "constants";
+import { Color_Main, MAP_COLOR } from "constants";
 import { Fill, Stroke, Style } from "ol/style";
 
 export const country = new Style({

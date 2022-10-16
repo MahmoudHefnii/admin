@@ -9,6 +9,7 @@ export default function Input(props) {
         value={value}
         placeholder={placeholder}
         onChange={(e) => handleAction(e?.target?.value)}
+        maxLength={30}
       />
     </>
   );

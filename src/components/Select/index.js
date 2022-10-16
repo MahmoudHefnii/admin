@@ -15,6 +15,7 @@ export default function SingleSelect(props) {
 
   useEffect(() => {
     handleAction(defaultValue || allOptions[0]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

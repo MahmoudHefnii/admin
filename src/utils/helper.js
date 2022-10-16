@@ -41,7 +41,7 @@ export const AddFunction = (arr, id, name, country) => {
             return { ...el, isSelected: false };
           }),
           {
-            id: el?.buildings?.length + 1,
+            id: Math.random(),
             buildingName: name,
             isSelected: true,
             locationId: country?.value,

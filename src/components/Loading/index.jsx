@@ -1,5 +1,5 @@
-import styles from "styles/Loading/Loading.module.scss";
 import DeleteIcon from "assets/svg/loading.svg";
+import styles from "styles/Loading/Loading.module.scss";
 
 export default function Loading(props) {
   return (

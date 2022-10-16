@@ -1,12 +1,12 @@
-import styles from "styles/AddBuilding/AddBuilding.module.scss";
-import Header from "components/Header";
 import Button from "components/Button";
-import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
+import Header from "components/Header";
 import Input from "components/Input";
 import SingleSelect from "components/Select";
 import countriesList from "data/countriesList.json";
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { updateAllData } from "store/actions/getAllData";
+import styles from "styles/AddBuilding/AddBuilding.module.scss";
 import { AddFunction } from "utils/helper";
 
 export default function AddBuilding(props) {
@@ -22,18 +22,20 @@ export default function AddBuilding(props) {
   };
 
   const handleAddBuilding = () => {
-    setLoadingMap(true);
-    setAddBuilding(false);
-    const addElement = AddFunction(
-      userBuildings?.data,
-      selectedUser?.selectedUser?.id,
-      buildingName,
-      country
-    );
-    dispatch(updateAllData(addElement));
-    setTimeout(() => {
-      setLoadingMap(false);
-    }, 500);
+    if (buildingName.length > 0) {
+      setLoadingMap(true);
+      setAddBuilding(false);
+      const addElement = AddFunction(
+        userBuildings?.data,
+        selectedUser?.selectedUser?.id,
+        buildingName,
+        country
+      );
+      dispatch(updateAllData(addElement));
+      setTimeout(() => {
+        setLoadingMap(false);
+      }, 500);
+    }
   };
 
   return (

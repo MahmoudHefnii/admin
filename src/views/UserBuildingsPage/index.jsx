@@ -1,14 +1,14 @@
+import Header from "components/Header";
+import Loading from "components/Loading";
 import React, { Fragment, useEffect, useState } from "react";
-import BuildingsList from "./BuildingsList";
-import Users from "./Users";
-import styles from "styles/UserBuildingsPage/UserBuildingsPage.module.scss";
-import AddBuilding from "./AddBuilding";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllData } from "store/actions/getAllData";
-import Loading from "components/Loading";
-import MapLocation from "./Map";
+import styles from "styles/UserBuildingsPage/UserBuildingsPage.module.scss";
+import AddBuilding from "./AddBuilding";
+import BuildingsList from "./BuildingsList";
 import EditBuilding from "./EditBuilding";
-import Header from "components/Header";
+import MapLocation from "./Map";
+import Users from "./Users";
 
 export default function UserBuildingsPage() {
   const [addBuilding, setAddBuilding] = useState(false);
@@ -20,6 +20,7 @@ export default function UserBuildingsPage() {
 
   useEffect(() => {
     dispatch(getAllData());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (userBuildings?.loading) {

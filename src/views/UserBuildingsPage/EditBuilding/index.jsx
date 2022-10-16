@@ -1,12 +1,12 @@
-import styles from "styles/AddBuilding/AddBuilding.module.scss";
-import Header from "components/Header";
 import Button from "components/Button";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import Header from "components/Header";
 import Input from "components/Input";
 import SingleSelect from "components/Select";
 import countriesList from "data/countriesList.json";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { updateAllData } from "store/actions/getAllData";
+import styles from "styles/AddBuilding/AddBuilding.module.scss";
 import { updateFunction } from "utils/helper";
 
 export default function EditBuilding(props) {
@@ -24,20 +24,22 @@ export default function EditBuilding(props) {
   };
 
   const handleEditBuilding = () => {
-    setLoadingMap(true);
-    setEditBuilding(false);
-    const updateElement = updateFunction(
-      userBuildings?.data,
-      selectedUser?.selectedUser?.id,
-      selectedBuild?.selectedBuild?.id,
-      buildingName,
-      country
-    );
-    console.log(updateElement);
-    dispatch(updateAllData(updateElement));
-    setTimeout(() => {
-      setLoadingMap(false);
-    }, 500);
+    if (buildingName.length > 0) {
+      setLoadingMap(true);
+      setEditBuilding(false);
+      const updateElement = updateFunction(
+        userBuildings?.data,
+        selectedUser?.selectedUser?.id,
+        selectedBuild?.selectedBuild?.id,
+        buildingName,
+        country
+      );
+      console.log(updateElement);
+      dispatch(updateAllData(updateElement));
+      setTimeout(() => {
+        setLoadingMap(false);
+      }, 500);
+    }
   };
 
   useEffect(() => {

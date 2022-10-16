@@ -1,12 +1,12 @@
-import styles from "styles/BuildingsList/BuildingsList.module.scss";
 import DeleteIcon from "assets/icons/delete.png";
 import EditIcon from "assets/icons/edit.png";
 import Header from "components/Header";
-import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getSelectedUser } from "store/actions/getSelectedUser";
-import { getSelectedBuild } from "store/actions/getSelectedBuild";
+import { useDispatch, useSelector } from "react-redux";
 import { updateAllData } from "store/actions/getAllData";
+import { getSelectedBuild } from "store/actions/getSelectedBuild";
+import { getSelectedUser } from "store/actions/getSelectedUser";
+import styles from "styles/BuildingsList/BuildingsList.module.scss";
 import {
   deleteElementFunction,
   findElementFunction,

@@ -1,9 +1,9 @@
+import { Provider } from "react-redux";
+import { applyMiddleware, createStore } from "redux";
+import thunk from "redux-thunk";
 import "./App.css";
 import UserBuildingsPage from "./pages/user-buildings";
-import { Provider } from "react-redux";
-import thunk from "redux-thunk";
 import allReducers from "./store/reducers";
-import { createStore, applyMiddleware } from "redux";
 
 function App() {
   const store = createStore(allReducers, applyMiddleware(thunk));
